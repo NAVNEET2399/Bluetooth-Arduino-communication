@@ -1,10 +1,10 @@
 import serial
 import time
 print("Starting Communication between Bluetooth and python")
-port = "COM21"  # specify the com port  - check the COM Port in Device manager (Windows)
+port = "COM21"    # specify the com port  - check the COM Port in Device manager (Windows)
 while True:
     try:
-        bluetooth = serial.Serial(port, 9600)    // create instance of Serial communication
+        bluetooth = serial.Serial(port, 9600)    #create instance of Serial communication
         print("Connection Established")
         break
     except:
